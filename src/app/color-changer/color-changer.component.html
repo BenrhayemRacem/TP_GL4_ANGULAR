@@ -1,0 +1,10 @@
+
+<div>
+<div class="colorContainer" [style.backgroundColor]="color" > </div>
+
+  change color : <input #colorIn type="text" placeholder="transparent" [value]="getColor()" (change)="setColor(colorIn.value)">
+
+  <div>
+    <button (click)="setColor('transparent')">reset color</button>
+  </div>
+</div>
