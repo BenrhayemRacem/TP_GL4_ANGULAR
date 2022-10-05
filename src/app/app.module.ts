@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { ColorChangerComponent } from './color-changer/color-changer.component';
 import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
 import { FormsModule } from '@angular/forms';
+import { ColorChangerChildComponent } from './color-changer-child/color-changer-child.component';
 @NgModule({
   declarations: [
     AppComponent,
     ColorChangerComponent,
-    CarteVisiteComponent
+    CarteVisiteComponent,
+    ColorChangerChildComponent
   ],
   imports: [
     BrowserModule,

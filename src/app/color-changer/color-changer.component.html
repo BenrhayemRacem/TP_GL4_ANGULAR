@@ -7,4 +7,6 @@
   <div>
     <button (click)="setColor('transparent')">reset color</button>
   </div>
+
+  <app-color-changer-child [parentColor]="color" (newItemEvent)="setColor($event)"></app-color-changer-child>
 </div>

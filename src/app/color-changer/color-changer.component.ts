@@ -19,4 +19,5 @@ export class ColorChangerComponent implements OnInit {
     this.color = newColor
   }
 
+
 }

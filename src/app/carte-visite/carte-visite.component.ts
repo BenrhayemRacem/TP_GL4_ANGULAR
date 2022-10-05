@@ -9,7 +9,7 @@ export class CarteVisiteComponent implements OnInit {
 
   firstName:string = ""
   lastName:string = ""
-  image:string = ""
+  image:string = "candidate.png"
   job:string = ""
   quote:string = ""
   keyWords:string = ""
