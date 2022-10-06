@@ -17,4 +17,9 @@ export class CvComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeCvIndex(newVal:number) {
+    this.index = newVal
+    this.singleCv = cvList[newVal]
+  }
+
 }

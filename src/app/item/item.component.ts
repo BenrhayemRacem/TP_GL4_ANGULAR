@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-item',
@@ -14,6 +14,14 @@ export class ItemComponent implements OnInit {
   firstname :string=""
   @Input()
   image :string=""
+  @Input()
+  index:number=0
+
+  @Output()
+  changeItemIndex = new EventEmitter<number>()
+  changeIndex() {
+this.changeItemIndex.emit(this.index)
+  }
 
   constructor() { }
 

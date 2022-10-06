@@ -2,7 +2,7 @@
 <div class="container">
 
   <div class="side">
-    <app-liste [dataList]="list"></app-liste>
+    <app-liste [dataList]="list" (newChangeIndexEvent)="changeCvIndex($event)"></app-liste>
   </div>
 
   <div class="side">
