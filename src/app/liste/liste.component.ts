@@ -10,19 +10,19 @@ import {IItem} from "./item.interface";
 export class ListeComponent implements OnInit {
 
   @Input()
-  dataList :IItem[] = [];
+  dataList! :IItem[] ;
 
 
   @Output()
-  newChangeIndexEvent = new EventEmitter<number>()
+  newChangeItemEvent = new EventEmitter<IItem>()
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  changeCurrentIndex (newVal:number) {
-    this.newChangeIndexEvent.emit(newVal)
+  changeCurrentIndex (newVal:IItem) {
+    this.newChangeItemEvent.emit(newVal)
   }
 
 }

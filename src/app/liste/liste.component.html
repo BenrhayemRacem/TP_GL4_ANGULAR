@@ -2,6 +2,6 @@
 
 <div *ngFor="let item of dataList">
   <div >
-<app-item (changeItemIndex)="changeCurrentIndex($event)"  firstname="{{item.firstname}}" name="{{item.name}}" image="{{item.path}}" [index]="item.id -1"></app-item>
+<app-item (changeItemIndex)="changeCurrentIndex($event)"  [item]="item"></app-item>
   </div>
 </div>

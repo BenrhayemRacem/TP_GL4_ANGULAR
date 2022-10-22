@@ -10,16 +10,15 @@ import {IItem} from "../liste/item.interface";
 export class CvComponent implements OnInit {
 
   list=cvList ;
-  index=0 ;
-  singleCv:IItem = cvList[this.index];
+  singleCv!:IItem ;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  changeCvIndex(newVal:number) {
-    this.index = newVal
-    this.singleCv = cvList[newVal]
+  changeCvItem(newVal:IItem) {
+
+    this.singleCv = newVal
   }
 
 }

@@ -10,15 +10,7 @@ export class DetailComponent implements OnInit {
 
 
   @Input()
-  singleItem:IItem = {
-    id:0,
-    name:"",
-    firstname :"",
-    job:"",
-    cin:"",
-    path:"",
-    age:""
-  } ;
+  singleItem!:IItem
 
   constructor() { }
 
