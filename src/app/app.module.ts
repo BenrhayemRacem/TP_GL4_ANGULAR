@@ -12,6 +12,8 @@ import { ListeComponent } from './liste/liste.component';
 import { ItemComponent } from './item/item.component';
 import { DetailComponent } from './detail/detail.component';
 import { MiniWordComponent } from './mini-word/mini-word.component';
+import { RainbowSimulatorDirective } from './rainbow-simulator.directive';
+import { RainbowTextComponent } from './rainbow-text/rainbow-text.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,10 @@ import { MiniWordComponent } from './mini-word/mini-word.component';
     ListeComponent,
     ItemComponent,
     DetailComponent,
-    MiniWordComponent
+    MiniWordComponent,
+    RainbowSimulatorDirective,
+    RainbowTextComponent,
+
   ],
   imports: [
     BrowserModule,
