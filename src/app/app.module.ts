@@ -11,6 +11,7 @@ import { CvComponent } from './cv/cv.component';
 import { ListeComponent } from './liste/liste.component';
 import { ItemComponent } from './item/item.component';
 import { DetailComponent } from './detail/detail.component';
+import { MiniWordComponent } from './mini-word/mini-word.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { DetailComponent } from './detail/detail.component';
     CvComponent,
     ListeComponent,
     ItemComponent,
-    DetailComponent
+    DetailComponent,
+    MiniWordComponent
   ],
   imports: [
     BrowserModule,

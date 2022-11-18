@@ -1,0 +1,17 @@
+<h1>Exercice mini word</h1>
+
+<input type="color" #color [value]="myColor" (change)="setColor(color.value)">
+
+<input type="number" #size min="10" [value]="mySize" (change)="setSize(size.value)">
+
+<select name="font" [(ngModel)]="myFont" >
+  <option value="cursive">cursive</option>
+  <option value="serif">serif</option>
+  <option value="sans-serif">sans-serif</option>
+  <option value="system-ui">system-ui</option>
+</select>
+
+<p [ngStyle]="{'color':myColor ,'font-size':mySize +'px' , 'font-family':myFont}" >
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem culpa doloribus dolorum ea enim expedita id iure modi natus necessitatibus praesentium, provident ratione recusandae repellat sequi, soluta totam. Asperiores, totam.Animi autem doloremque error eveniet minima molestias nam nobis non officiis praesentium, quis quos, ratione reiciendis sed sit veniam, voluptatibus! Dicta eos esse illum nemo quas, quia rerum voluptates voluptatibus!Amet aperiam blanditiis, commodi consectetur delectus deserunt dolorum ea error facere id illo illum in, laborum libero, nesciunt officiis perspiciatis porro possimus quae quod repudiandae sequi unde velit voluptate voluptatibus.Ab amet aspernatur assumenda atque dicta dolor dolorum error et, ex fugit itaque iure laboriosam maiores maxime nemo numquam perferendis quasi qui quidem quis quo, ratione reprehenderit vel vitae voluptas.Ad aliquam beatae consequatur consequuntur corporis culpa cupiditate delectus, dolore et exercitationem fugit hic ipsa ipsam itaque laborum maiores minus natus omnis pariatur praesentium quia ut veniam vero vitae voluptatibus.A dolorem ipsa, iste mollitia necessitatibus officia placeat reiciendis tempora temporibus! Asperiores aut blanditiis commodi corporis cumque dolorem ducimus ex excepturi explicabo illum inventore laudantium, maiores officia praesentium repudiandae? Officia.Doloremque, dolores et! Dolor eius error ipsa ipsum perspiciatis provident vel voluptatibus. Ab architecto aut cumque cupiditate eligendi ex laborum nobis nostrum quas, reiciendis similique unde vel velit vitae voluptate!Beatae laboriosam libero modi mollitia provident quos reprehenderit unde voluptatem. Aliquam enim expedita facilis magnam officia? Blanditiis delectus eaque itaque numquam omnis praesentium, quam quasi quos reiciendis sunt veritatis vero?Aperiam at consequatur dicta ea esse et impedit in laboriosam libero minima modi nam necessitatibus nisi non numquam officiis possimus quae quam quibusdam recusandae sequi sit tempore unde, vero voluptatum?Ad dolorum facere fuga molestias quasi rem reprehenderit sapiente velit. Asperiores consectetur consequatur consequuntur corporis, dicta, dignissimos dolore eligendi in, incidunt labore laboriosam libero nostrum quas quasi quis sint ullam.</p>
+
+
